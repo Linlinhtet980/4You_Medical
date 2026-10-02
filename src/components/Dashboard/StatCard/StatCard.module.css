@@ -1,0 +1,67 @@
+.card {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.03);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--background-200);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05), 0 2px 4px rgba(0,0,0,0.03);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.title {
+  color: var(--text-500);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.value {
+  color: var(--text-900);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.iconWrapper {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+/* Color Variations */
+.primary {
+  background-color: var(--primary-50);
+  color: var(--primary-600);
+}
+
+.secondary {
+  background-color: var(--secondary-50);
+  color: var(--secondary-600);
+}
+
+.accent {
+  background-color: var(--accent-50);
+  color: var(--accent-600);
+}
+
+.error {
+  background-color: var(--error-50);
+  color: var(--error-500);
+}

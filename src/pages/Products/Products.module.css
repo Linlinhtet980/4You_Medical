@@ -1,0 +1,128 @@
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.headerSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.titleArea {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.pageTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-900);
+}
+
+.pageSubtitle {
+  color: var(--text-500);
+  font-size: 0.95rem;
+}
+
+.filterBar {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid var(--background-300);
+  border-radius: 8px;
+  padding: 0 15px;
+  width: 280px;
+  transition: all 0.2s;
+}
+
+.searchBox:focus-within {
+  border-color: var(--primary-400);
+  box-shadow: 0 0 0 3px var(--primary-50);
+}
+
+.searchIcon {
+  color: var(--text-400);
+  font-size: 1.1rem;
+}
+
+.searchInput {
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+  color: var(--text-800);
+  background: transparent;
+}
+
+.searchInput::placeholder {
+  color: var(--text-400);
+}
+
+.filterSelect {
+  padding: 10px 15px;
+  border: 1px solid var(--background-300);
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: var(--text-800);
+  outline: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+  min-width: 160px;
+}
+
+.filterSelect:focus {
+  border-color: var(--primary-400);
+  box-shadow: 0 0 0 3px var(--primary-50);
+}
+
+.addBtn {
+  background-color: var(--primary-600);
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s;
+  margin-left: auto;
+}
+
+.addBtn:hover {
+  background-color: var(--primary-700);
+}
+
+@media (max-width: 768px) {
+  .headerSection {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .filterBar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .searchBox {
+    width: 100%;
+  }
+
+  .addBtn {
+    margin-left: 0;
+    justify-content: center;
+  }
+}

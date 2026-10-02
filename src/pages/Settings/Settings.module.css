@@ -1,0 +1,143 @@
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.headerSection {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.pageTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-900);
+}
+
+.pageSubtitle {
+  color: var(--text-500);
+  font-size: 0.95rem;
+}
+
+.settingsGrid {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.tabsCard {
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid var(--background-200);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.tabBtn {
+  background: none;
+  border: none;
+  padding: 12px 15px;
+  text-align: left;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-600);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tabBtn:hover {
+  background-color: var(--background-50);
+  color: var(--text-900);
+}
+
+.activeTab {
+  background-color: var(--primary-50);
+  color: var(--primary-700);
+  font-weight: 600;
+}
+
+.activeTab:hover {
+  background-color: var(--primary-50);
+}
+
+.contentCard {
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid var(--background-200);
+  padding: 30px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+}
+
+.contentCard h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-800);
+  margin-bottom: 24px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--background-200);
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.fullWidth {
+  grid-column: 1 / -1;
+}
+
+.formGroup label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-700);
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  padding: 10px 15px;
+  border: 1px solid var(--background-300);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: var(--text-900);
+  outline: none;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+  border-color: var(--primary-500);
+  box-shadow: 0 0 0 3px var(--primary-50);
+}
+
+.saveBtn {
+  background-color: var(--primary-600);
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 30px;
+}
+
+.saveBtn:hover {
+  background-color: var(--primary-700);
+}
+

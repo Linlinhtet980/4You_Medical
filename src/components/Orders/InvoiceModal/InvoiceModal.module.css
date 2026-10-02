@@ -1,0 +1,109 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(15, 23, 42, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+}
+
+.modalContent {
+  background-color: #ffffff;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-height: 90vh;
+}
+
+.modalHeader {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--background-200);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--text-500);
+  cursor: pointer;
+}
+
+.printBtn {
+  background-color: var(--primary-600);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.modalBody {
+  padding: 24px;
+  overflow-y: auto;
+}
+
+/* Printable Area Styles */
+.invoiceContainer {
+  padding: 40px;
+  background: white;
+  color: black; /* Ensure black ink for printing */
+}
+
+.invoiceHeader {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--background-200);
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.billTo {
+  margin-bottom: 30px;
+}
+
+.invoiceTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+
+.invoiceTable th {
+  background-color: var(--background-50);
+  padding: 12px;
+  border-bottom: 2px solid var(--background-200);
+  text-align: left;
+}
+
+.invoiceTable td {
+  padding: 12px;
+  border-bottom: 1px solid var(--background-100);
+}
+
+.invoiceTable tfoot td {
+  border-bottom: none;
+  padding: 8px 12px;
+}
+
+.invoiceFooter {
+  text-align: center;
+  color: var(--text-500);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--background-200);
+  padding-top: 20px;
+}
